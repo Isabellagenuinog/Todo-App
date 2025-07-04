@@ -1,0 +1,8 @@
+TodoApp
+
+**Inicio do código, sempre feito no terminal para a instalação do pack Jason e a instalação do servidor para que ele possa rodar online.
+
+instalação do pack: npm init -y
+instalação do servidor: npm i express
+
+junto dessas instalações geralmente o pacote "node modules" vem junto, para excluir este item do git hub, coloque ".gitignore" na área dos arquivos, e dentro coloque o nome da pasta
