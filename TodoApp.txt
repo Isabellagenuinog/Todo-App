@@ -5,4 +5,18 @@ TodoApp
 instalação do pack: npm init -y
 instalação do servidor: npm i express
 
-junto dessas instalações geralmente o pacote "node modules" vem junto, para excluir este item do git hub, coloque ".gitignore" na área dos arquivos, e dentro coloque o nome da pasta
+junto dessas instalações geralmente o pacote "node modules" vem junto, para excluir este item do git hub, coloque ".gitignore" na área dos arquivos, e dentro coloque o nome da pasta.
+
+Dentro do index.js inserir essa estrutura de código (Node.js):
+
+const express = require("express") // estamos importando o modulo express, que facilica a criação de servidores HTTP no node.js
+ 
+const app = express()  //chamamos uma função, ela vai criar a instância
+
+app.get('/', (requisicao, resposta) => {  //
+    resposta.send("Olá Mundo!")
+})
+
+app.listen(3000, ()=> {  // 
+    console.log("Servidor rodando na porta 3000!")
+})
